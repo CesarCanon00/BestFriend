@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    tools:context=".fragments.PerfilFragment">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3F72FD"
+        app:layout_constraintStart_toStartOf="@+id/appBarLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Mi Perfil" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+        tools:layout_editor_absoluteX="-8dp">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/cambiarNombre"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:ems="0"
+            android:fadeScrollbars="false"
+            android:gravity="left|center"
+            android:text="Cambiar nombre"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/separator3" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/correoElectronico"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:ems="0"
+            android:fadeScrollbars="false"
+            android:gravity="left|center"
+            android:text="Actualizar correo electrónico"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/separator3" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:ems="0"
+            android:fadeScrollbars="false"
+            android:gravity="left|center"
+            android:text="Cambiar contraseña"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/separator3" />
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/telefono"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:ems="0"
+            android:fadeScrollbars="false"
+            android:gravity="left|center"
+            android:text="Actualizar teléfono"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/separator3" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cerrarSesion"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@android:color/transparent"
+        android:ems="0"
+        android:fadeScrollbars="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left|center"
+        android:text="Cerrar Sesión"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/separator3"
+        app:layout_constraintBottom_toTopOf="@+id/cerrarSesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
